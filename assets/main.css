@@ -1,0 +1,73 @@
+body {
+margin: 20px;
+font-family: 'Playfair Display', serif;
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-template-rows: 55vh 1fr 25vh;
+  grid-gap: 7.5px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #efefef;
+  color: grey;
+  padding: 20px;
+  font-size: 150%;
+  display: inline-grid;
+}
+
+#intro {
+grid-column: 1/ 2;
+grid-row: 1/ 2;
+}
+
+#intro h1 {
+  font-size: 2.25rem;
+  font-weight: initial;
+}
+
+#intro p{
+font-size: 1rem;
+}
+
+/* To reset button default styling */
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#button {
+grid-column: 1/ 2;
+grid-row: 2/ 3;
+font-size: 1.25rem;
+text-align: center;
+}
+
+#info {
+  grid-column: 1/ 2;
+  grid-row: 3/ 4;
+}
+
+#quote {
+grid-column: 2/ 3;
+grid-row: 1/ 4;
+background-image: url("https://www.dailyworth.com/wp-content/uploads/2017/07/Pillar-content-5-1500x1000.jpg");
+}
+
+#quote q {
+  font-family: 'Parisienne', cursive;
+  align-self: center;
+  margin: 3rem;
+  color: #000;
+  text-shadow: 1px 1px #fff;
+}
