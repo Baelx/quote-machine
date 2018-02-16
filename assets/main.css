@@ -1,7 +1,6 @@
 body {
-margin: 20px;
+margin: 1.25rem;
 font-family: 'Playfair Display', serif;
-
 }
 
 .wrapper {
@@ -58,16 +57,17 @@ text-align: center;
   grid-row: 3/ 4;
 }
 
-#quote {
+#quote-area {
 grid-column: 2/ 3;
 grid-row: 1/ 4;
 background-image: url("https://www.dailyworth.com/wp-content/uploads/2017/07/Pillar-content-5-1500x1000.jpg");
 }
 
-#quote q {
+#quote {
   font-family: 'Parisienne', cursive;
   align-self: center;
   margin: 3rem;
   color: #000;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px #a8a8a8;
+  font-size: 2rem;
 }
