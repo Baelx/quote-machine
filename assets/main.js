@@ -2,24 +2,32 @@ var button = document.getElementById("button");
 var quote = document.getElementById("quote");
 var quoteArea = document.getElementById("quote-area");
 var aboutButton = document.getElementById("about-button");
+var aboutArea = document.getElementById("about-area");
+var body = document.getElementById("body");
+var wrapper = document.getElementById("wrapper");
 
 
-
-  if (quote.classList.contains("hide-elem") && quoteArea.classList.contains("blur-bg-img")){
 aboutButton.addEventListener("click", function(event){
+  if (quote.classList.contains("hide-elem") &&
+      quoteArea.classList.contains("blur-bg-img") &&
+      aboutArea.classList.contains("show-about-area") &&
+      wrapper.classList.contains("dark-bg") &&
+      body.classList.contains("dark-bg")
+      ){
       quote.className = "";
-      quoteArea.classname = "";
+      quoteArea.className = "";
+      aboutArea.className = "";
+      wrapper.className = "";
+      body.className = "";
       console.log("added classes");
-})
-  } else if (!(quote.classList.contains("hide-elem")) && !(quoteArea.classList.contains("blur-bg-img"))) {
-aboutButton.addEventListener("click", function(event){
-      quote.className += "hide-elem";
-      quoteArea.className += "blur-bg-img";
-      console.log("removed classes");
-})
   } else {
-      console.log("doing nothing");
-}
+      quote.className += " hide-elem ";
+      quoteArea.className += " blur-bg-img ";
+      aboutArea.className = " show-about-area ";
+      wrapper.className = " dark-bg ";
+      body.className = " dark-bg ";
+      console.log("removed classes");
+  }
 })
 
 button.addEventListener("click", function(event){

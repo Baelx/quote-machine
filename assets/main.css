@@ -3,7 +3,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.wrapper {
+#wrapper {
   display: grid;
   grid-template-columns: 25vw 22vw 22vw 22vw; /* from 70vw */
   grid-template-rows: 55vh 1fr 25vh;
@@ -75,27 +75,30 @@ color: #fff;
     -1px 1px 0 #a8a8a8,
     1px 1px 0 #a8a8a8;
     background-color:rgba(0, 0, 0, 0);
+    padding: 20px;
+    font-size: 150%;
+    display: inline-grid;
 }
 
-.disclaimer {
+#disclaimer {
 margin: 1.25rem;
 }
 
-.credits {
+#credits {
 margin: 3rem;
 }
 
-.resources {
+#resources {
 text-align: center;
 }
 
-.resources a{
+#resources a{
 color:#000;
 text-decoration: none;
 
 }
 
-.resources a:hover {
+#resources a:hover {
 color:#fff;
 }
 
@@ -110,7 +113,10 @@ display:none; /* will hide the quote itself */
 }
 
 .blur-bg-img {
-filter: blur(4px);
+filter: blur(5px);
+}
+.dark-bg {
+background-color: #cecdcd !important;
 }
 /* Used in JS - End */
 
