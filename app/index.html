@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- build:css /assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/main.css">
+  <!-- endbuild -->
+
+	<link href="https://fonts.googleapis.com/css?family=Bellefair|Playfair+Display:400,700" rel="stylesheet">
+
+	<title>Quote Machine</title>
+</head>
+<body id="body">
+	<div id="wrapper">
+		<div class="sidebar-box sidebar-box--intro">
+<h1 class="sidebar-box__title">An inspiration generator<span class="link">*</span></h1>
+<p>Move over Maya Angelou, Ghandi, and Benjamin Franklin. These quotes are from the man who not only knows words, but has the best words.</p><p>Get ready to be inspired.</p>
+</div>
+		<div id="button" class="sidebar-box sidebar-box__button"><button class="link">More Inspiriation</button></div>
+		<div class="sidebar-box sidebar-box__button sidebar-box--more-info"><button id="tweet-button">Tweet</button><button id="about-button">About</button></div>
+		<div id="about-area" class="sidebar-box sidebar-box__button"><p id="disclaimer" class="hide-elem">*This is simple site is indented as satire and does not in any way support nor condone the words and actions of Donald Trump.</p>
+			<p id="credits" class="hide-elem">Made with a random image from Unsplash using their API, in combination with What does Trump think? - available with an API generating a random Trump quote. Any image/quote combination is purely random and not designed to convery any additional message. This site's author hopes you're now inspired to donate to organizations like Politifact who are working tirelessly to bring accountability to the words of Trump and other notable politicians.</p>
+			<div class="link" class="hide-elem">
+				<a href="https://unsplash.com/">Unsplash</a><br>
+				<a href="https://whatdoestrumpthink.com/">What does Trump think?</a><br>
+				<a href="http://www.politifact.com/membership/">Donate to Politifact</a>
+			</div>
+		</div>
+		<div id="quote-area">
+			<q id="quote"></q>
+		</div>
+	</div>
+
+	<!-- build:js /assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

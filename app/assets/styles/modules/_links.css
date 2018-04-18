@@ -1,0 +1,22 @@
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+color:#fff;
+}
+
+  & a {
+    color:#000;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color:#fff;
+  }
+
+}
+
+button:hover {
+  color: #fff;
+}
