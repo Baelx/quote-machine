@@ -230,6 +230,13 @@ button:hover {
     margin-top: 2.5px;
   }
 
+@media (min-width: 408px){
+
+.sidebar-box__description {
+      font-size: 0.7rem
+  }
+  }
+
 @media (min-width: 560px){
 
 .sidebar-box__description {
@@ -238,12 +245,19 @@ button:hover {
       justify-content: space-evenly;
       float: none;
       width:100%;
-      font-size: 0.8rem
+      font-size: 0.9rem
+  }
+  }
+
+@media (min-width: 752px){
+
+.sidebar-box__description {
+      font-size: 1.1rem
   }
   }
 
 .sidebar-box p {
-  margin: 0;
+    margin: 0;
   }
 
 @media (min-width: 560px){
