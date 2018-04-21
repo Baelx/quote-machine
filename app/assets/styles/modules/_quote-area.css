@@ -1,6 +1,6 @@
 #quote-area {
-  grid-column: 2/ 6;
-  grid-row: 1/ 4;
+  grid-column: 1/ 6;
+  grid-row: 2/ 3;
   background-color: #efefef;
   color: grey;
   padding: 20px;
@@ -8,10 +8,10 @@
   display: inline-grid;
   background-position: center;
 
-@mixin atSmall {
-  grid-column: 2/ 6; /* from 2/3 */
-  grid-row: 1/ 4;
-}
+  @mixin atSmall {
+    grid-column: 2/ 6; /* from 2/3 */
+    grid-row: 1/ 4;
+  }
 
 }
 
@@ -21,49 +21,54 @@
   margin: 3rem;
   color: #fff;
   text-shadow:
-    -1px -1px 0 #a8a8a8,
-    1px -1px 0 #a8a8a8,
-    -1px 1px 0 #a8a8a8,
-    1px 1px 0 #a8a8a8;
+  -1px -1px 0 #a8a8a8,
+  1px -1px 0 #a8a8a8,
+  -1px 1px 0 #a8a8a8,
+  1px 1px 0 #a8a8a8;
   font-size: 2rem;
 }
 
 #about-area {
-  grid-column: 2/ 6; /* from 2/3 */
-  grid-row: 1/ 4;
+  grid-column: 1 /6;
+  grid-row: 2 / 3;
   color: #fff;
   text-shadow:
-    -1px -1px 0 #a8a8a8,
-    1px -1px 0 #a8a8a8,
-    -1px 1px 0 #a8a8a8,
-    1px 1px 0 #a8a8a8;
-    background-color:rgba(0, 0, 0, 0);
-    padding: 20px;
-    font-size: 150%;
-    display: inline-grid;
+  -1px -1px 0 #a8a8a8,
+  1px -1px 0 #a8a8a8,
+  -1px 1px 0 #a8a8a8,
+  1px 1px 0 #a8a8a8;
+  background-color:rgba(0, 0, 0, 0);
+  padding: 20px;
+  font-size: 150%;
+  display: inline-grid;
+
+  @mixin atSmall {
+    grid-column: 2/ 6; /* from 2/3 */
+    grid-row: 1/ 4;
+  }
 }
 
 .show-about-area {
-z-index: 1; /* assigned to the about-area */
+  z-index: 1; /* assigned to the about-area */
 }
 
 #disclaimer {
-margin: 1.25rem;
+  margin: 1.25rem;
 }
 
 #credits {
-margin: 3rem;
+  margin: 3rem;
 }
 
 #resources {
-text-align: center;
+  text-align: center;
 }
 
 
 .hide-elem {
-display:none; /* will hide the quote itself */
+  display:none; /* will hide the quote itself */
 }
 
 .blur-bg-img {
-filter: blur(5px);
+  filter: blur(5px);
 }
