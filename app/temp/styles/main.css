@@ -68,7 +68,7 @@ button:hover {
   color: #fff;
 }
 
-#quote-area {
+.quote-area {
   grid-column: 1/ 6;
   grid-row: 2/ 3;
   background-color: #efefef;
@@ -77,35 +77,37 @@ button:hover {
   font-size: 150%;
   display: inline-grid;
   background-position: center;
+  transition: all 0.3s ease-out;
 
 }
 
 @media (min-width: 560px){
 
-#quote-area {
+.quote-area {
     grid-column: 2/ 6; /* from 2/3 */
     grid-row: 1/ 4
 
 }
   }
 
-#quote {
-  font-family: 'Bellefair', serif;
-  align-self: center;
-  margin: 3rem;
-  color: #fff;
-  text-shadow:
-  -1px -1px 0 #a8a8a8,
-  1px -1px 0 #a8a8a8,
-  -1px 1px 0 #a8a8a8,
-  1px 1px 0 #a8a8a8;
-  font-size: 2rem;
-}
+.quote-area__text {
+    font-family: 'Bellefair', serif;
+    align-self: center;
+    margin: 3rem;
+    color: #fff;
+    text-shadow:
+    -1px -1px 0 #a8a8a8,
+    1px -1px 0 #a8a8a8,
+    -1px 1px 0 #a8a8a8,
+    1px 1px 0 #a8a8a8;
+    font-size: 2rem;
+  }
 
-#about-area {
+.about-area {
   grid-column: 1 /6;
   grid-row: 2 / 3;
   color: #fff;
+  z-index: 0;
   text-shadow:
   -1px -1px 0 #a8a8a8,
   1px -1px 0 #a8a8a8,
@@ -115,34 +117,27 @@ button:hover {
   padding: 20px;
   font-size: 150%;
   display: inline-grid;
+  transition: all 3s ease-out;
 }
 
 @media (min-width: 560px){
 
-#about-area {
+.about-area {
     grid-column: 2/ 6; /* from 2/3 */
     grid-row: 1/ 4
 }
   }
 
-.show-about-area {
+.about-area__content {
+  text-align: center;
+  }
+
+.raise-up {
   z-index: 1; /* assigned to the about-area */
 }
 
-#disclaimer {
-  margin: 1.25rem;
-}
-
-#credits {
-  margin: 3rem;
-}
-
-#resources {
-  text-align: center;
-}
-
 .hide-elem {
-  display:none; /* will hide the quote itself */
+  opacity: 0; /* will hide the quote itself */
 }
 
 .blur-bg-img {
