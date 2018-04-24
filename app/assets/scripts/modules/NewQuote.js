@@ -1,6 +1,38 @@
-// import $ from 'jquery';
-//
-//
+import $ from 'jquery';
+
+class NewQuote {
+  constructor() {
+    this.quoteButton = $(".link--quote-button");
+    this.quoteArea = $(".quote-area");
+    this.quoteText = $(".quote-area__text");
+    this.events();
+  }
+
+  events() {
+    this.quoteButton.click(this.apiCall());
+  }
+
+  toggleAboutArea() {
+
+  }
+
+  apiCall() {
+      $.ajax({
+        url : 'https://api.whatdoestrumpthink.com/api/v1/quotes/random',
+        type : 'GET',
+        success : function(data){ // success est toujours en place, bien sûr !
+  console.log(data);
+        this.quoteArea.css('background-image', 'url(' + data + ')');
+
+        }
+      });
+  }
+
+}
+
+
+export default NewQuote;
+
 // var button = document.getElementById("button");
 // var quote = document.getElementById("quote");
 // var quoteArea = document.getElementById("quote-area");

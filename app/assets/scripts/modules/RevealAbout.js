@@ -24,17 +24,16 @@ class RevealAbout {
 
   toggleAboutArea() {
     this.aboutArea.toggleClass("hide-elem raise-up");
-
-console.log("click");
+    console.log("toggle about area");
   }
 
   toggleQuoteArea() {
-      this.quoteText.toggleClass("raise-up");
-      this.quoteArea.toggleClass("hide-elem");
+    this.quoteText.toggleClass("raise-up");
+    this.quoteArea.toggleClass("hide-elem");
 
-      console.log("click event 2");
+    console.log("toggle quote area+text");
 
-    }
+  }
 
 }
 

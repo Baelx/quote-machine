@@ -2,7 +2,7 @@ import NewQuote from './modules/NewQuote';
 import RevealAbout from './modules/RevealAbout';
 import $ from 'jquery';
 
-// const newQuote = new NewQuote();
+const newQuote = new NewQuote();
 const revealAbout = new RevealAbout();
 
 
