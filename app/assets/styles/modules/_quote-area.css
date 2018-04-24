@@ -7,7 +7,8 @@
   font-size: 150%;
   display: inline-grid;
   background-position: center;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s linear;
+  z-index: 0;
 
   @mixin atSmall {
     grid-column: 2/ 6; /* from 2/3 */
@@ -25,6 +26,7 @@
     -1px 1px 0 #a8a8a8,
     1px 1px 0 #a8a8a8;
     font-size: 2rem;
+    z-index: 0;
   }
 
 }
@@ -46,6 +48,11 @@
   font-size: 150%;
   display: inline-grid;
   transition: all 3s ease-out;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
 
   @mixin atSmall {
     grid-column: 2/ 6; /* from 2/3 */
@@ -58,11 +65,11 @@
 }
 
 .raise-up {
-  z-index: 1; /* assigned to the about-area */
+  z-index: 1;
 }
 
 .hide-elem {
-  opacity: 0; /* will hide the quote itself */
+  opacity: 0;
 }
 
 .blur-bg-img {
