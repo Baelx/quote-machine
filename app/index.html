@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An inspiration generator.">
 
 	<!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/main.css">
@@ -21,10 +22,14 @@
 </div>
 </div>
 		<div class="sidebar-box sidebar-box__button sidebar-box__button--main"><button class="link link--quote-button">More Inspiriation</button></div>
-		<div class="sidebar-box sidebar-box__button sidebar-box__more-info"><button class="sidebar-box__tweet-button">Tweet</button><button id="about-button"class="sidebar-box__about-button link--about-area">About</button></div>
+		<div class="sidebar-box sidebar-box__button sidebar-box__more-info">
+
+			<a class="sidebar-box sidebar-box__button link" href="https://twitter.com/intent/tweet?text=Hello%20world">
+			Tweet</a>
+		<button class="sidebar-box__about-button link--about-area">About</button></div>
 		<div class="about-area hide-elem"><p class="about-area__content">*This is simple site is indented as satire and does not in any way support nor condone the words and actions of Donald Trump.</p>
 			<p class="about-area__content">Made with a random image from Unsplash using their API, in combination with What does Trump think? - available with an API generating a random Trump quote. Any image/quote combination is purely random and not designed to convey any additional message. This site's author hopes you're now inspired to donate to organizations like Politifact who are working tirelessly to bring accountability to the words of Trump and other notable public figures.</p>
-			<div class="link about-area__content" class="">
+			<div class="link about-area__content">
 				<a href="https://unsplash.com/">Unsplash</a><br>
 				<a href="https://whatdoestrumpthink.com/">What does Trump think?</a><br>
 				<a href="http://www.politifact.com/membership/">Donate to Politifact</a>
@@ -34,6 +39,8 @@
 			<q class="quote-area__text raise-up"></q>
 		</div>
 	</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 	<!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>

@@ -12,7 +12,7 @@ body {
 #wrapper {
   display: grid;
   grid-template-columns: 30vh 1fr 1fr;
-  grid-template-rows: 15vh 1fr 10vh;
+  grid-template-rows: 15vh 70vh 10vh;
   grid-gap: 4.5px;
   background-color: #fff;
   color: #444;
@@ -52,8 +52,8 @@ button {
 }
 
 .link:hover {
-color:#fff;
-}
+    color:#fff;
+  }
 
 .link a {
     color:#000;
@@ -85,7 +85,7 @@ button:hover {
 @media (min-width: 560px){
 
 .quote-area {
-    grid-column: 2/ 6; /* from 2/3 */
+    grid-column: 2/ 6; 
     grid-row: 1/ 4
 
 }
@@ -105,26 +105,32 @@ button:hover {
     z-index: 0;
   }
 
+.quote-area__text::before {
+      content:"";
+    }
+
+.quote-area__text::after {
+      content:"";
+    }
+
 .about-area {
   grid-column: 1 /6;
   grid-row: 2 / 3;
   color: #fff;
-  z-index: 0;
   text-shadow:
-  -1px -1px 0 #a8a8a8,
-  1px -1px 0 #a8a8a8,
-  -1px 1px 0 #a8a8a8,
-  1px 1px 0 #a8a8a8;
+  -1px -1px 0 #eee,
+  1px -1px 0 #eee,
+  -1px 1px 0 #eee,
+  1px 1px 0 #eee;
   background-color:rgba(0, 0, 0, 0);
   padding: 20px;
   font-size: 150%;
-  display: inline-grid;
   transition: all 3s ease-out;
-  z-index: 1;
+  z-index: -1;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 560px){
@@ -136,7 +142,7 @@ button:hover {
   }
 
 .about-area__content {
-  text-align: center;
+    text-align: center;
   }
 
 .raise-up {

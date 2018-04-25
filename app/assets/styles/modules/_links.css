@@ -3,8 +3,8 @@
   cursor: pointer;
 
   &:hover {
-color:#fff;
-}
+    color:#fff;
+  }
 
   & a {
     color:#000;

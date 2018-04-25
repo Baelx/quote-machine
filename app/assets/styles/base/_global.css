@@ -11,7 +11,7 @@ body {
 #wrapper {
   display: grid;
   grid-template-columns: 30vh 1fr 1fr;
-  grid-template-rows: 15vh 1fr 10vh;
+  grid-template-rows: 15vh 70vh 10vh;
   grid-gap: 4.5px;
   background-color: #fff;
   color: #444;
