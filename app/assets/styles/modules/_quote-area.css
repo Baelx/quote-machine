@@ -11,7 +11,7 @@
   z-index: 0;
 
   @mixin atSmall {
-    grid-column: 2/ 6; 
+    grid-column: 2/ 6;
     grid-row: 1/ 4;
   }
 
@@ -45,14 +45,13 @@
   grid-row: 2 / 3;
   color: #fff;
   text-shadow:
-  -1px -1px 0 #eee,
-  1px -1px 0 #eee,
-  -1px 1px 0 #eee,
-  1px 1px 0 #eee;
+  -1px -1px 0 #888,
+  1px -1px 0 #888,
+  -1px 1px 0 #888,
+  1px 1px 0 #888;
   background-color:rgba(0, 0, 0, 0);
   padding: 20px;
-  font-size: 150%;
-  transition: all 3s ease-out;
+  transition: all 0.3s linear;
   z-index: -1;
   display: inline-flex;
   flex-direction: column;
@@ -66,6 +65,7 @@
 
   &__content {
     text-align: center;
+    transition: all 0.3s linear;
   }
 }
 

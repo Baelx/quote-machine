@@ -3,7 +3,8 @@ import $ from 'jquery';
 class pageControls {
   constructor() {
     this.aboutArea = $(".about-area");
-    this.aboutButton = $(".link--about-area");
+    this.aboutButton = $(".sidebar-box__about-button");
+    this.tweetButton = $(".sidebar-box__tweet-button");
     this.aboutContent = $(".about-area__content");
     this.quoteArea = $(".quote-area");
     this.quoteButton = $(".link--quote-button");
@@ -19,7 +20,7 @@ class pageControls {
   keyPressHandler(e) {
     if (e.keyCode == 27) {
       this.toggleAboutArea();
-      this.toggleQuoteArea;
+      this.toggleQuoteArea();
     }
   }
 

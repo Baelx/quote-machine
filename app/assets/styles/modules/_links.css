@@ -6,10 +6,18 @@
     color:#fff;
   }
 
-  & a {
+  & a  {
     color:#000;
     text-decoration: none;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
   }
+
 
   & a:hover {
     color:#fff;
@@ -17,6 +25,17 @@
 
 }
 
-button:hover {
-  color: #fff;
+button {
+  text-decoration: none;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  &:hover {
+    color: #fff;
+  }
 }

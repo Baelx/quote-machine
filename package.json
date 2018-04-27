@@ -21,7 +21,8 @@
   },
   "homepage": "https://baelx.github.io/quote-machine",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "unsplash-js": "^4.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",

@@ -33,18 +33,6 @@ body {
   background-color: #cecdcd !important;
 }
 
-/* To reset button default styling */
-
-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-
 .link {
   text-decoration: none;
   cursor: pointer;
@@ -55,18 +43,36 @@ button {
     color:#fff;
   }
 
-.link a {
+.link a  {
     color:#000;
     text-decoration: none;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
   }
 
 .link a:hover {
     color:#fff;
   }
 
-button:hover {
-  color: #fff;
+button {
+  text-decoration: none;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
+
+button:hover {
+    color: #fff;
+  }
 
 .quote-area {
   grid-column: 1/ 6;
@@ -85,7 +91,7 @@ button:hover {
 @media (min-width: 560px){
 
 .quote-area {
-    grid-column: 2/ 6; 
+    grid-column: 2/ 6;
     grid-row: 1/ 4
 
 }
@@ -118,14 +124,13 @@ button:hover {
   grid-row: 2 / 3;
   color: #fff;
   text-shadow:
-  -1px -1px 0 #eee,
-  1px -1px 0 #eee,
-  -1px 1px 0 #eee,
-  1px 1px 0 #eee;
+  -1px -1px 0 #888,
+  1px -1px 0 #888,
+  -1px 1px 0 #888,
+  1px 1px 0 #888;
   background-color:rgba(0, 0, 0, 0);
   padding: 20px;
-  font-size: 150%;
-  transition: all 3s ease-out;
+  transition: all 0.3s linear;
   z-index: -1;
   display: inline-flex;
   flex-direction: column;
@@ -143,6 +148,7 @@ button:hover {
 
 .about-area__content {
     text-align: center;
+    transition: all 0.3s linear;
   }
 
 .raise-up {
@@ -165,12 +171,6 @@ button:hover {
   display: inline-grid;
   font-size: 0.7rem;
 }
-
-@media (min-width: 560px){
-    .sidebar-box__about-button {
-      border-top: 1px solid rgb(153,153,153,0.3);
-    }
-  }
 
 .sidebar-box__intro {
     grid-column: 1 / 6;
@@ -304,7 +304,9 @@ button:hover {
     grid-column: 2 / 6;
     grid-row: 3/ 4;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 0;
   }
 
 @media (min-width: 560px){
@@ -312,8 +314,7 @@ button:hover {
 .sidebar-box__more-info {
       grid-column: 1/2;
       grid-row: 3/ 4;
-      display: inline-grid;
-      justify-content: inherit
+      flex-direction: column
   }
   }
 
