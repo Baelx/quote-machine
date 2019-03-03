@@ -1,28 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Playfair Display', serif;
-
-  @mixin atSmall {
-    margin: 1.25rem;
-  }
-
-}
-
-
-#wrapper {
-  display: grid;
-  grid-template-columns: 30vh 1fr 1fr;
-  grid-template-rows: 15vh 70vh 10vh;
-  grid-gap: 4.5px;
-  background-color: #fff;
-  color: #444;
-
-  @mixin atSmall {
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 60vh 10vh 20vh;
-    grid-gap: 7.5px;
-  }
+  background: url('../../assets/images/bg.png');
+  background-repeat: repeat;
+  margin: 0;
+  /*@mixin atSmall {
+  margin: 1.25rem;
+  }*/
 
 }
+
 
 .dark-bg {
   background-color: #cecdcd !important;
