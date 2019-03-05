@@ -1,5 +1,8 @@
 import PageControls from './modules/PageControls';
+import FollowMouse from './modules/FollowMouse';
+import About from './modules/About';
 import $ from 'jquery';
+
 const pageControls = new PageControls();
 
 
@@ -15,8 +18,6 @@ let loadResources = async () => {
   let quoteToLink = "https://twitter.com/share?url=https%3A%2F%2Ftrumpspiration.com&text=" + newTwitterURI;
 
   pageControls.tweetButton.attr("href", quoteToLink);
-
-  console.log(image.urls.regular);
 
   pageControls.quoteText.html(quote.message);
   pageControls.quoteArea.css("background-image", `url(${image.urls.regular})`);

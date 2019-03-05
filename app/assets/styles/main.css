@@ -1,5 +1,6 @@
 @import "base/_mixins";
 @import "base/_global";
+@import "base/_vars";
 @import "modules/_links";
-@import "modules/_quote-area";
+@import "modules/_poster";
 @import "modules/_navigation";

@@ -2,10 +2,6 @@ import $ from 'jquery';
 
 class pageControls {
   constructor() {
-    this.aboutArea = $(".about-area");
-    this.aboutButton = $(".sidebar-box__about-button");
-    this.tweetButton = $(".sidebar-box__tweet-button");
-    this.aboutContent = $(".about-area__content");
     this.quoteArea = $(".quote-area");
     this.quoteButton = $(".link--quote-button");
     this.quoteText = $(".quote-area__text");

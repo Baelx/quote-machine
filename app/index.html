@@ -17,11 +17,11 @@
 <body id="body">
 
 	<div class="navigation">
-		<div class="container">
+		<div class="flex-container">
 
-			<div class="left-nav">
-				<img class="logo" src="assets/images/trump.png" alt="">
-				<h1 class="title">Trumpspiration<span class="link link--about-area">*</span></h1>
+			<div class="left-nav nav-edge">
+						<img class="logo" src="assets/images/trump.png" alt="">
+				<h1 class="title">Trumpspiration<span class="link link--about-area about-trigger">*</span></h1>
 			</div>
 
 			<!-- <div class="sidebar-box__description">
@@ -31,8 +31,8 @@
 			href="https://twitter.com/share?url=https%3A%2F%2Ftwitter.com&hashtags=example%2Cdemo&text=custom%20share%20text">
 			Tweet
 		</a> -->
-		<div class="right-nav">
-			<button class="sidebar-box sidebar-box__button sidebar-box__about-button link">About</button>
+		<div class="right-nav nav-edge">
+			<button class="sidebar-box sidebar-box__button sidebar-box__about-button link about-trigger">About</button>
 			<button class="link link--quote-button">Generate Inspiriation</button>
 		</div>
 
@@ -47,12 +47,17 @@
 
 </div>
 </div>
-<div class="poster">
-	<!-- <div class="quote-area raise-up">
-		<q class="quote-area__text raise-up"></q>
-	</div> -->
-<img src="assets/images/inspiration.png" alt="">
+<div class="container">
+	<div class="flipper">
+		<img class="poster-front" src="assets/images/inspiration.png" alt="">
+		<div class="back">
+			<p>Testing</p>
+		</div>
+	</div>
 </div>
+
+
+
 
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
