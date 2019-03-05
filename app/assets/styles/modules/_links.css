@@ -2,10 +2,6 @@
   text-decoration: none;
   cursor: pointer;
 
-  &:hover {
-    color:#fff;
-  }
-
   & a  {
     color:#000;
     text-decoration: none;
@@ -16,11 +12,6 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
-  }
-
-
-  & a:hover {
-    color:#fff;
   }
 
 }
@@ -34,8 +25,9 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  /* padding-bottom: 15px; */
 
   &:hover {
-    color: #fff;
+    border-bottom: 2px solid black;
   }
 }

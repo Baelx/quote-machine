@@ -3,6 +3,7 @@
   perspective: 1000px;
   margin: 0 auto;
   display: block;
+  margin-bottom: 40px;
 
   .flipper {
     /* flip speed */

@@ -23,10 +23,6 @@ body {
 
 }
 
-.link:hover {
-    color:#fff;
-  }
-
 .link a  {
     color:#000;
     text-decoration: none;
@@ -37,10 +33,6 @@ body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-  }
-
-.link a:hover {
-    color:#fff;
   }
 
 button {
@@ -54,8 +46,10 @@ button {
   outline: inherit;
 }
 
+/* padding-bottom: 15px; */
+
 button:hover {
-    color: #fff;
+    border-bottom: 2px solid black;
   }
 
 /* entire container, keeps perspective */
@@ -65,6 +59,7 @@ button:hover {
           perspective: 1000px;
   margin: 0 auto;
   display: block;
+  margin-bottom: 40px;
 }
 
 .container .flipper {
@@ -116,11 +111,16 @@ button:hover {
   color: white;
 }
 
+.bar {
+z-index: 2;
+}
+
 .navigation {
   background-color: white;
   color: black;
   width: 100%;
-  height: 60px;
+  height: 70px;
+  border-bottom: 1px solid black;
 }
 
 .navigation .flex-container {
@@ -146,12 +146,13 @@ button:hover {
 
 .navigation .logo {
     /* width: 70px; */
-    height: 70px;
-    margin: 5px 10px 0px 10px;
+    height: 90%;
+    margin: 5px 0 10px 0;
   }
 
 .navigation .title {
     display: block;
+    margin: 10px 10px 10px 10px;
   }
 
 .navigation .right-nav {
@@ -164,3 +165,13 @@ button:hover {
       margin: 5px 10px 5px 10px;
       display: block;
     }
+
+.bottom-bar {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  bottom: 0;
+  border-top: 1px solid black;
+
+}
